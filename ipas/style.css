@@ -1,0 +1,319 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    color: #75445a;
+}
+
+/* =================================
+   NAVBAR MODERN
+================================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 5%;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 25px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid #ffe0eb;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(214, 95, 145, 0.12);
+}
+
+/* LOGO */
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d65f91;
+    letter-spacing: 1px;
+}
+
+/* MENU */
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 8px;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #75445a;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 10px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+/* EFEK HOVER */
+
+.navbar ul li a:hover {
+    color: white;
+    background: linear-gradient(90deg, #f3a1c1, #d65f91);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(214, 95, 145, 0.3);
+}
+
+/* JUDUL */
+
+.judul {
+    text-align: center;
+    padding: 70px 15px 20px;
+}
+
+.judul h1 {
+    color: #c45b85;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.judul p {
+    color: #d18ba7;
+    font-size: 14px;
+}
+
+/* KONTEN */
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto 70px;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 25px;
+    align-items: start;
+}
+
+/* GAMBAR */
+
+.gambar {
+    background: white;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px #f0c5d6;
+    position: relative;
+    top: 20px;
+}
+
+.gambar img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.gambar h3 {
+    padding: 15px 5px 5px;
+    color: #c45b85;
+}
+
+.gambar p {
+    padding: 0 5px 10px;
+    font-size: 13px;
+    color: #a8798e;
+}
+
+/* CARD INFORMASI */
+
+.informasi {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    background: #ffe1ec;
+    padding: 23px;
+    border-radius: 17px;
+    border-left: 5px solid #e88caf;
+    box-shadow: 0 4px 10px #f2ccda;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    background: #ffd4e3;
+    box-shadow: 0 7px 15px #edb8cb;
+}
+
+.card h3 {
+    color: #bd527e;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #80566a;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card li {
+    font-size: 13px;
+    line-height: 2;
+    color: #80566a;
+}
+
+/* FOOTER */
+
+footer {
+    background: #f3c4d5;
+    padding: 45px 5%;
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr 1.2fr;
+    gap: 35px;
+    color: #75445a;
+}
+
+footer h3 {
+    color: #b94f7b;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+footer p {
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+footer ul {
+    padding-left: 20px;
+}
+
+footer li {
+    margin-bottom: 14px;
+    font-size: 13px;
+}
+
+footer a {
+    color: #75445a;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #d65f91;
+}
+
+/* KONTAK */
+
+.kontak {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.kontak-box {
+    background: #fff0f5;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.kontak-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px #e9b8ca;
+}
+
+.kontak-box h4 {
+    font-size: 13px;
+    margin-bottom: 12px;
+    color: #bd527e;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.sosmed a {
+    background: #f3c4d5;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.sosmed a:hover {
+    background: #d65f91;
+    color: white;
+}
+
+/* COPYRIGHT */
+
+.copyright {
+    background: #df9fb9;
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #713c55;
+}
+
+/* RESPONSIVE HP */
+
+@media (max-width: 768px) {
+
+    nav {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .gambar {
+        position: static;
+    }
+
+    .gambar img {
+        height: 300px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .judul h1 {
+        font-size: 25px;
+    }
+}
